@@ -451,11 +451,11 @@
                                 <a class="dropdown-item" href="#">
                                     <i class="si si-user mr-5"></i> Profile
                                 </a>
-                                <!-- <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
                                     <span><i class="si si-envelope-open mr-5"></i> Inbox</span>
                                     <span class="badge badge-primary">3</span>
                                 </a>
-                                <a class="dropdown-item" href="#">
+                                <!-- <a class="dropdown-item" href="#">
                                     <i class="si si-note mr-5"></i> Invoices
                                 </a> -->
                                 <div class="dropdown-divider"></div>
@@ -546,10 +546,12 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center">ID</th>
-                                        <th>Book Name</th>
-                                        <th class="d-none d-sm-table-cell">Author</th>
-                                        <th class="d-none d-sm-table-cell" style="width: 15%;">Publisher</th>
-                                        <th class="text-center" style="width: 15%;">Year</th>
+                                        <th class="text-center">Book Name</th>
+                                        <th class="text-center d-none d-sm-table-cell">Category</th>
+                                        <th class="text-center d-none d-sm-table-cell">Author</th>
+                                        <th class="text-center d-none d-sm-table-cell" style="width: 13%;">Publisher</th>
+                                        <th class="text-center" style="width: 7%;">Year</th>
+                                        <th class="text-center" style="width: 8%;">Status</th>
                                         <th class="text-center" style="width: 100px;">Actions</th>
                                     </tr>
                                 </thead>
@@ -557,9 +559,13 @@
                                     <tr>
                                         <td class="text-center">001</td>
                                         <td class="font-w600">Belajar Cepat C++</td>
+                                        <td class="d-none d-sm-table-cell">Programming</td>
                                         <td class="d-none d-sm-table-cell">Markus Hernandes</td>
                                         <td class="d-none d-sm-table-cell">Pelita Jaya</td>
-                                        <td class="d-none d-sm-table-cell">2000</td>
+                                        <td class="text-center d-none d-sm-table-cell">2000</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -572,9 +578,13 @@
                                     <tr>
                                         <td class="text-center">002</td>
                                         <td class="font-w600">Mengelola Database Dengan Sangat Cerdas</td>
+                                        <td class="d-none d-sm-table-cell">Programming</td>
                                         <td class="d-none d-sm-table-cell">Alexander Pierce</td>
                                         <td class="d-none d-sm-table-cell">Computer INC</td>
-                                        <td class="d-none d-sm-table-cell">2002</td>
+                                        <td class="text-center d-none d-sm-table-cell">2002</td>
+                                        <td>
+                                            <span class="badge badge-danger">Dipinjam</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -587,9 +597,13 @@
                                     <tr>
                                         <td class="text-center">003</td>
                                         <td class="font-w600">Learn Java From Scratch</td>
+                                        <td class="d-none d-sm-table-cell">Programming</td>
                                         <td class="d-none d-sm-table-cell">Bob Doe</td>
                                         <td class="d-none d-sm-table-cell">Computer INC</td>
-                                        <td class="d-none d-sm-table-cell">2011</td>
+                                        <td class="text-center d-none d-sm-table-cell">2011</td>
+                                        <td>
+                                            <span class="badge badge-danger">Dipinjam</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -602,9 +616,13 @@
                                     <tr>
                                         <td class="text-center">004</td>
                                         <td class="font-w600">Learn Python from Scratch, 6ed</td>
+                                        <td class="d-none d-sm-table-cell">Programming</td>
                                         <td class="d-none d-sm-table-cell">Mike Doe</td>
                                         <td class="d-none d-sm-table-cell">Codepolytan</td>
-                                        <td class="d-none d-sm-table-cell">2014</td>
+                                        <td class="text-center d-none d-sm-table-cell">2014</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -617,9 +635,13 @@
                                     <tr>
                                         <td class="text-center">005</td>
                                         <td class="font-w600">Decision Support System and Intelligent Systems, 7ed</td>
+                                        <td class="d-none d-sm-table-cell">Information System</td>
                                         <td class="d-none d-sm-table-cell">Sharda, Ramesh - Turban, Efraim</td>
                                         <td class="d-none d-sm-table-cell">Pearson</td>
-                                        <td class="d-none d-sm-table-cell">2005</td>
+                                        <td class="text-center d-none d-sm-table-cell">2005</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -632,9 +654,13 @@
                                     <tr>
                                         <td class="text-center">006</td>
                                         <td class="font-w600">Java ™ How To Program, --8 ed</td>
+                                        <td class="d-none d-sm-table-cell">Programming</td>
                                         <td class="d-none d-sm-table-cell">Paul Deitel, Harvey Deitel</td>
                                         <td class="d-none d-sm-table-cell">Prentice Hall</td>
-                                        <td class="d-none d-sm-table-cell">2003</td>
+                                        <td class="text-center d-none d-sm-table-cell">2003</td>
+                                        <td>
+                                            <span class="badge badge-success">Hilang</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -647,9 +673,13 @@
                                     <tr>
                                         <td class="text-center">007</td>
                                         <td class="font-w600">Bayesian Networks and Decision Graphs, --2 ed.</td>
+                                        <td class="d-none d-sm-table-cell">Information System</td>
                                         <td class="d-none d-sm-table-cell">Jensen, Finn V.</td>
                                         <td class="d-none d-sm-table-cell">Springer</td>
-                                        <td class="d-none d-sm-table-cell">2007</td>
+                                        <td class="text-center d-none d-sm-table-cell">2007</td>
+                                        <td>
+                                            <span class="badge badge-danger">Dipinjam</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -662,9 +692,13 @@
                                     <tr>
                                         <td class="text-center">008</td>
                                         <td class="font-w600">Perencanaan Kebutuhan Sistem Informasi di Medical Center ITS</td>
+                                        <td class="d-none d-sm-table-cell">FP Book</td>
                                         <td class="d-none d-sm-table-cell">Sinembadan, Yohanes Firdian</td>
                                         <td class="d-none d-sm-table-cell">Jurusan Sistem Informasi - ITS</td>
-                                        <td class="d-none d-sm-table-cell">2007</td>
+                                        <td class="text-center d-none d-sm-table-cell">2007</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -677,9 +711,13 @@
                                     <tr>
                                         <td class="text-center">009</td>
                                         <td class="font-w600">Management Information Systems : Managing Information Technology in the Business Enterprise, --8 ed</td>
+                                        <td class="d-none d-sm-table-cell">Information System</td>
                                         <td class="d-none d-sm-table-cell">O'Brien, James A</td>
                                         <td class="d-none d-sm-table-cell">McGraw Hill</td>
-                                        <td class="d-none d-sm-table-cell">2014</td>
+                                        <td class="text-center d-none d-sm-table-cell">2014</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -692,9 +730,13 @@
                                     <tr>
                                         <td class="text-center">010</td>
                                         <td class="font-w600">Corporate Information Systems Management : Text and Cases, --8 ed</td>
+                                        <td class="d-none d-sm-table-cell">Information System</td>
                                         <td class="d-none d-sm-table-cell">Applegate, Lynda M. - Mcfarlan, F. Warren</td>
                                         <td class="d-none d-sm-table-cell">McGraw Hill</td>
-                                        <td class="d-none d-sm-table-cell">2008</td>
+                                        <td class="text-center d-none d-sm-table-cell">2008</td>
+                                        <td>
+                                            <span class="badge badge-danger">Dipinjam</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -707,9 +749,13 @@
                                     <tr>
                                         <td class="text-center">011</td>
                                         <td class="font-w600">Discrete Mathematics, --7 ed</td>
+                                        <td class="d-none d-sm-table-cell">Mathematics</td>
                                         <td class="d-none d-sm-table-cell">Johnson, Richard A.</td>
                                         <td class="d-none d-sm-table-cell">Prentice Hall</td>
-                                        <td class="d-none d-sm-table-cell">2009</td>
+                                        <td class="text-center d-none d-sm-table-cell">2009</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
@@ -722,9 +768,13 @@
                                     <tr>
                                         <td class="text-center">012</td>
                                         <td class="font-w600">Calculus : With Analytic Geometry</td>
+                                        <td class="d-none d-sm-table-cell">Mathematics</td>
                                         <td class="d-none d-sm-table-cell">Larson, Ron</td>
                                         <td class="d-none d-sm-table-cell">Houghton Mifflin Company</td>
-                                        <td class="d-none d-sm-table-cell">2015</td>
+                                        <td class="text-center d-none d-sm-table-cell">2015</td>
+                                        <td>
+                                            <span class="badge badge-success">Tersedia</span>
+                                        </td>
                                         <td class="text-center">
                                             <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
                                                 <i class="fa fa-pencil"></i>
