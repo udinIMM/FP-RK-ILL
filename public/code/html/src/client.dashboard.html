@@ -193,7 +193,7 @@
                                     <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
                                 </div>
                             </div>
-                            <div class="block-content">
+                           <div class="block-content">
                                 <form action="#" method="post" onsubmit="return false;">
                                     <div class="form-group mb-15">
                                         <label for="side-overlay-profile-name">Name</label>
@@ -368,11 +368,11 @@
                                 </a>
                                 <ul class="list-inline mt-10">
                                     <li class="list-inline-item">
-                                        <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="#">Admin</a>
+                                        <a class="link-effect text-dual-primary-dark font-size-xs font-w600 text-uppercase" href="#">ILL CLIENT</a>
                                     </li>
                                     <li class="list-inline-item">
                                         <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
-                                        <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" >
+                                        <a class="link-effect text-dual-primary-dark" data-toggle="layout" data-action="sidebar_style_inverse_toggle" href="javascript:void(0)">
                                             <i class="si si-drop"></i>
                                         </a>
                                     </li>
@@ -391,7 +391,7 @@
                         <div class="content-side content-side-full">
                             <ul class="nav-main">
                                 <li>
-                                    <a href="dashboard.html"><i class="fa fa-coffee"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                                    <a href="client.dashboard.html"><i class="fa fa-coffee"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
                                 <li>
                                     <a href="book.html"><i class="si si-book-open"></i><span class="sidebar-mini-hide">Books</span></a>
@@ -451,18 +451,18 @@
                                 <a class="dropdown-item" href="#">
                                     <i class="si si-user mr-5"></i> Profile
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="#">
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
                                     <span><i class="si si-envelope-open mr-5"></i> Inbox</span>
                                     <span class="badge badge-primary">3</span>
                                 </a>
-                                <!-- <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="be_pages_generic_invoice.html">
                                     <i class="si si-note mr-5"></i> Invoices
-                                </a> -->
+                                </a>
                                 <div class="dropdown-divider"></div>
 
                                 <!-- Toggle Side Overlay -->
                                 <!-- Layout API, functionality initialized in Codebase() -> uiApiLayout() -->
-                                <a class="dropdown-item"  data-toggle="layout" data-action="side_overlay_toggle">
+                                <a class="dropdown-item" href="javascript:void(0)" data-toggle="layout" data-action="side_overlay_toggle">
                                     <i class="si si-wrench mr-5"></i> Settings
                                 </a>
                                 <!-- END Side Overlay -->
@@ -537,8 +537,19 @@
                     <!-- Dynamic Table Full -->
                     <div class="block">
                         <div class="block-header block-header-default">
-                            <h3 class="block-title">Book List <small>InterLibrary Loan ITS</small></h3>
-                            <a href="addbook.html" class="btn btn-sm btn-rounded btn-noborder btn-alt-success" role="button"><i class="fa fa-plus text-earth-light"></i>Add Book</a>
+                            <h3 cla ss="block-title">Book List <br> <small>InterLibrary Loan ITS</small></h3>
+                            <div class="block-content block-content-full block-content-sm bg-body-light">
+                                                            <form action="be_pages_generic_search.html" method="post">
+                                                                <div class="input-group">
+                                                                    <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Cari Buku">
+                                                                    <div class="input-group-append">
+                                                                        <button type="submit" class="btn btn-secondary px-10">
+                                                                            <i class="fa fa-search"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
                         </div>
                         <div class="block-content block-content-full">
                             <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/be_tables_datatables.js -->
@@ -567,12 +578,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -586,12 +592,7 @@
                                             <span class="badge badge-warning">Dipinjam</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary" disabled>Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -605,12 +606,7 @@
                                             <span class="badge badge-warning">Dipinjam</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary" disabled>Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -624,12 +620,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -643,12 +634,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -662,12 +648,7 @@
                                             <span class="badge badge-danger">Hilang</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary" disabled>Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -681,12 +662,7 @@
                                             <span class="badge badge-warning">Dipinjam</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary" disabled>Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -700,12 +676,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -719,12 +690,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -738,12 +704,7 @@
                                             <span class="badge badge-warning">Dipinjam</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <button type="button" class="btn btn-outline-primary" disabled>Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -757,12 +718,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -776,12 +732,7 @@
                                             <span class="badge badge-success">Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Edit">
-                                                <i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-sm btn-secondary" data-toggle="tooltip" title="Delete">
-                                                <i class="fa fa-times"></i>
-                                            </button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
                                         </td>
                                     </tr>
 
