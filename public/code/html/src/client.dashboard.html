@@ -393,18 +393,18 @@
                                 <li>
                                     <a href="client.dashboard.html"><i class="fa fa-coffee"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a href="book.html"><i class="si si-book-open"></i><span class="sidebar-mini-hide">Books</span></a>
-                                </li>
+                                </li> -->
                                 <!-- <li>
                                     <a href="#"><i class="fa fa-photo"></i><span class="sidebar-mini-hide">Medias</span></a>
                                 </li> -->
-                                <li>
+                                <!-- <li>
                                     <a href="post.html"><i class="fa fa-file-text-o"></i><span class="sidebar-mini-hide">Posts</span></a>
                                 </li>
                                 <li>
                                     <a href="user.html"><i class="si si-users"></i><span class="sidebar-mini-hide">Users</span></a>
-                                </li>
+                                </li> -->
                                 <!-- <li>
                                     <a href="#"><i class="fa fa-money"></i><span class="sidebar-mini-hide">Fines</span></a>
                                 </li> -->
@@ -685,8 +685,36 @@
                                             <span class="badge badge-success" data-placement="top" >Tersedia</span>
                                         </td>
                                         <td class="text-center">
-                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button">Pinjam</button>
+                                          <a href="client.pinjam.html" class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#modal-popout">Pinjam</button>
                                         </td>
+                                        <!-- Pop Out Modal -->
+                                        <div class="modal fade" id="modal-popout" tabindex="-1" role="dialog" aria-labelledby="modal-popout" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-popout" role="document">
+                                                <div class="modal-content">
+                                                    <div class="block block-themed block-transparent mb-0">
+                                                        <div class="block-header bg-primary-dark">
+                                                            <h3 class="block-title">Warning!</h3>
+                                                            <div class="block-options">
+                                                                <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                                                    <i class="si si-close"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="block-content">
+                                                            <p>Mohon maaf, buku yang ingin Anda pinjam tidak boleh dipinjamkan ke civitas akademika selain departemen asal buku tersebut.</p>
+                                                            <p>Informasi lebih lanjut, bisa hubungi pihak ruang baca / perpustakaan terkait.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Close</button>
+                                                        <!-- <button type="button" class="btn btn-alt-success" data-dismiss="modal">
+                                                            <i class="fa fa-check"></i> Perfect
+                                                        </button> -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END Pop Out Modal -->
                                     </tr>
                                     <tr>
                                         <td class="text-center">009</td>
