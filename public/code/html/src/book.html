@@ -19,6 +19,9 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
 
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.min.css">
+
         <!-- Stylesheets -->
         <!-- Codebase framework -->
         <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
@@ -26,6 +29,7 @@
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
         <!-- END Stylesheets -->
+        
     </head>
     <body>
         <!-- Page Container -->
@@ -549,9 +553,9 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center">ID</th>
-                                        <th class="text-center">Book Name</th>
-                                        <th class="text-center d-none d-sm-table-cell">Category</th>
-                                        <th class="text-center d-none d-sm-table-cell">Author</th>
+                                        <th class="text-center" style="width: 22%;">Book Name</th>
+                                        <th class="text-center d-none d-sm-table-cell" style="width: 9%;">Category</th>
+                                        <th class="text-center d-none d-sm-table-cell" style="width: 12%;">Author</th>
                                         <th class="text-center d-none d-sm-table-cell" style="width: 13%;">Publisher</th>
                                         <th class="text-center" style="width: 7%;">Year</th>
                                         <th class="text-center" style="width: 13%;">Lokasi</th>
@@ -803,6 +807,7 @@
 
                                 </tbody>
                             </table>
+                            
                         </div>
                     </div>
                     <!-- END Dynamic Table Full -->
@@ -840,8 +845,11 @@
 
         <!-- Page JS Plugins -->
         <script src="assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
+        <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 
         <!-- Page JS Code -->
         <script src="assets/js/pages/be_pages_dashboard.js"></script>
+        <script src="assets/js/pages/be_tables_datatables.js"></script>
     </body>
 </html>

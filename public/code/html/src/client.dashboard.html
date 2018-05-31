@@ -7,18 +7,20 @@
 
         <title>Dashboard - InterLibrary Loan Institut Teknologi Sepuluh Nopember</title>
 
-        <meta name="description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta name="description" content="Codebase - Bootstrap 4 Client Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
         <meta name="robots" content="noindex, nofollow">
 
         <!-- Open Graph Meta -->
-        <meta property="og:title" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework">
+        <meta property="og:title" content="Codebase - Bootstrap 4 Client Template &amp; UI Framework">
         <meta property="og:site_name" content="Codebase">
-        <meta property="og:description" content="Codebase - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+        <meta property="og:description" content="Codebase - Bootstrap 4 Client Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta property="og:type" content="website">
         <meta property="og:url" content="">
         <meta property="og:image" content="">
-
+        
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/datatables/dataTables.bootstrap4.min.css">
         <!-- Stylesheets -->
         <!-- Codebase framework -->
         <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
@@ -90,7 +92,7 @@
                                 <a class="img-link mr-5" href="#">
                                     <img class="img-avatar img-avatar32" src="assets/img/avatars/avatar15.jpg" alt="">
                                 </a>
-                                <a class="align-middle link-effect text-primary-dark font-w600" href="#">Administrator</a>
+                                <a class="align-middle link-effect text-primary-dark font-w600" href="#">Client</a>
                             </div>
                             <!-- END User Info -->
                         </div>
@@ -122,11 +124,11 @@
                                 <div class="row">
                                     <div class="col-4">
                                         <div class="font-size-sm font-w600 text-uppercase text-muted">Loans</div>
-                                        <div class="font-size-h4">0</div>
+                                        <div class="font-size-h4">1</div>
                                     </div>
                                     <div class="col-4">
-                                        <div class="font-size-sm font-w600 text-uppercase text-muted">Posts</div>
-                                        <div class="font-size-h4">28</div>
+                                        <div class="font-size-sm font-w600 text-uppercase text-muted">Comments</div>
+                                        <div class="font-size-h4">3</div>
                                     </div>
                                     <div class="col-4">
                                         <div class="font-size-sm font-w600 text-uppercase text-muted">Fines</div>
@@ -198,7 +200,7 @@
                                     <div class="form-group mb-15">
                                         <label for="side-overlay-profile-name">Name</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" id="side-overlay-profile-name" name="side-overlay-profile-name" placeholder="Your name.." value="Administrator">
+                                            <input type="text" class="form-control" id="side-overlay-profile-name" name="side-overlay-profile-name" placeholder="Your name.." value="Client">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">
                                                     <i class="fa fa-user"></i>
@@ -209,7 +211,7 @@
                                     <div class="form-group mb-15">
                                         <label for="side-overlay-profile-email">Email</label>
                                         <div class="input-group">
-                                            <input type="email" class="form-control" id="side-overlay-profile-email" name="side-overlay-profile-email" placeholder="Your email.." value="admin@ill.its.ac.id">
+                                            <input type="email" class="form-control" id="side-overlay-profile-email" name="side-overlay-profile-email" placeholder="Your email.." value="client@ill.its.ac.id">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">
                                                     <i class="fa fa-envelope"></i>
@@ -393,9 +395,9 @@
                                 <li>
                                     <a href="client.dashboard.html"><i class="fa fa-coffee"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                                 </li>
-                                <!-- <li>
-                                    <a href="book.html"><i class="si si-book-open"></i><span class="sidebar-mini-hide">Books</span></a>
-                                </li> -->
+                                <li>
+                                    <a href="dashboard.html"><i class="si si-action-undo"></i><span class="sidebar-mini-hide">Back to Admin</span></a>
+                                </li>
                                 <!-- <li>
                                     <a href="#"><i class="fa fa-photo"></i><span class="sidebar-mini-hide">Medias</span></a>
                                 </li> -->
@@ -445,7 +447,7 @@
                         <!-- User Dropdown -->
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Admin<i class="fa fa-angle-down ml-5"></i>
+                                Client<i class="fa fa-angle-down ml-5"></i>
                             </button>
                             <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
                                 <a class="dropdown-item" href="#">
@@ -537,19 +539,7 @@
                     <!-- Dynamic Table Full -->
                     <div class="block">
                         <div class="block-header block-header-default">
-                            <h3 cla ss="block-title">Book List <br> <small>InterLibrary Loan ITS</small></h3>
-                            <div class="block-content block-content-full block-content-sm bg-body-light">
-                                                            <form action="be_pages_generic_search.html" method="post">
-                                                                <div class="input-group">
-                                                                    <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Cari Buku">
-                                                                    <div class="input-group-append">
-                                                                        <button type="submit" class="btn btn-secondary px-10">
-                                                                            <i class="fa fa-search"></i>
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </form>
-                                                        </div>
+                            <h3 class="block-title">Book List <small>InterLibrary Loan ITS</small></h3>
                         </div>
                         <div class="block-content block-content-full">
                             <!-- DataTables init on table by adding .js-dataTable-full class, functionality initialized in js/pages/be_tables_datatables.js -->
@@ -557,9 +547,9 @@
                                 <thead>
                                     <tr>
                                         <th class="text-center">ID</th>
-                                        <th class="text-center">Book Name</th>
-                                        <th class="text-center d-none d-sm-table-cell">Category</th>
-                                        <th class="text-center d-none d-sm-table-cell">Author</th>
+                                        <th class="text-center" style="width: 22%;">Book Name</th>
+                                        <th class="text-center d-none d-sm-table-cell" style="width: 9%;">Category</th>
+                                        <th class="text-center d-none d-sm-table-cell" style="width: 12%;">Author</th>
                                         <th class="text-center d-none d-sm-table-cell" style="width: 13%;">Publisher</th>
                                         <th class="text-center" style="width: 7%;">Year</th>
                                         <th class="text-center" style="width: 13%;">Lokasi</th>
@@ -816,8 +806,11 @@
 
         <!-- Page JS Plugins -->
         <script src="assets/js/plugins/chartjs/Chart.bundle.min.js"></script>
+        <script src="assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
 
         <!-- Page JS Code -->
         <script src="assets/js/pages/be_pages_dashboard.js"></script>
+        <script src="assets/js/pages/be_tables_datatables.js"></script>
     </body>
 </html>
